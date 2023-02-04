@@ -1,4 +1,4 @@
-particlesJS("particles-js" {
+particlesJS("particles-js", {
     particles: {
         number: { value: 6, density: { enable: true, value_area: 1000 } },
         color: { value: "#ebebeb" },
