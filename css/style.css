@@ -350,13 +350,13 @@
                     justify-content: center;
                     align-items: center;
                     text-align: center;
-                    font-size: 11px;
+                    font-size: 11.4px;
                 }
                 .texto h1 {
                     width: 100%;
                     height: 34px;
                     text-shadow: 2px 2px 0.5px rgb(84, 128, 129);
-                    font-size: 11px;
+                    font-size: 11.4px;
                 }
                 .title-Des {
                     display: flex;
