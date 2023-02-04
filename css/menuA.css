@@ -1,0 +1,419 @@
+/* menu pantalla grande */
+
+
+/* header */
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.066);
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* header end */
+
+.themeB {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url(../img/selectr.png), auto;
+}
+
+.themeB .lightB {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    cursor: url(../img/selectr.png), auto;
+}
+
+.themeB .darkMB {
+    width: 0;
+    height: 0;
+    display: flex;
+}
+
+.fond.blue .themeB .darkMB {
+    width: 24px;
+    height: 24px;
+    cursor: url(../img/selectr.png), auto;
+    display: flex;
+}
+
+.fond.blue .themeB .lightB {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.fond.blue .Home {
+    align-items: center;
+    /* background: rgb(146, 203, 205);
+    background: linear-gradient(0deg, rgb(55, 58, 74) 0%, rgb(105, 145, 141)93%); */
+    background: rgb(146, 203, 205);
+    background: linear-gradient(0deg, rgb(175, 184, 183) 0%, rgb(105, 145, 141)93%);
+    filter: drop-shadow(0 0 10px rgb(235, 239, 238));
+}
+
+
+/* menu pantalla grande fin */
+
+
+/* menu pantalla chica */
+
+.main {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    color: transparent;
+    background-color: transparent;
+}
+
+.main .mnu {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+}
+
+.main .mnu p {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    color: transparent;
+    background-color: transparent;
+}
+
+.main .mnu img {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    color: transparent;
+    background-color: transparent;
+}
+
+.main .theme {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.main.yw .theme {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    z-index: 5;
+}
+
+.main.yw .theme .light {
+    width: 24px;
+    height: 24px;
+    cursor: url(../img/selectr.png), auto;
+}
+
+.main.yw .theme .darkM {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.fond.blue {
+    background-color: rgb(51, 51, 51);
+}
+
+.fond.blue .main.yw .theme .darkM {
+    width: 24px;
+    height: 24px;
+    cursor: url(../img/selectr.png), auto;
+    display: flex;
+}
+
+.fond.blue .main.yw .theme .light {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+
+/* ----inicio menu yellow--- */
+
+.main.yw {
+    display: flex;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: rgba(112, 243, 247, 0.308); */
+    background-color: rgba(14, 66, 68, 0.2);
+    text-shadow: 1.4px 1.4px 0.4px rgba(34, 34, 34, 0.801);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    font-size: 14px;
+    top: 75px;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.main.yw .mnu {
+    width: 250px;
+    height: 60px;
+    z-index: 5;
+    margin: 4px 23px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    flex-direction: row;
+    border: 2px solid rgba(80, 219, 138, 0.1);
+    background-color: rgba(56, 255, 212, 0.1);
+    backdrop-filter: blur(1px);
+    border-radius: 8px;
+    cursor: url(../img/selectr.png), auto;
+}
+
+.main.yw .mnu p {
+    width: auto;
+    height: 30px;
+    color: #e4e4e4;
+    font-size: 30px;
+    margin: 0 0 0 20px;
+    font-family: lato, sans-serif;
+    float: left;
+}
+
+.main.yw .mnu img {
+    width: 32px;
+    height: 30px;
+    /* margin: 0 0 0 4%; */
+    float: right;
+}
+
+
+/* ----fin menu yellow--- */
+
+.menu {
+    display: flex;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger {
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.hamburger .changed {
+    justify-content: center;
+    cursor: url(../img/selectr.png), auto;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    z-index: 5;
+}
+
+.line {
+    width: 24px;
+    margin: 0;
+}
+
+.line-main::before,
+.line-main::after,
+.line-split::after,
+.line-split::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    width: inherit;
+    height: 4px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 0 10px;
+    background-color: rgb(231, 228, 228);
+    transition: transform .5s;
+}
+
+.line-main::before {
+    transform: translateY(-7px);
+}
+
+.line-main::after {
+    transform: translateY(7px);
+}
+
+.line-split::before,
+.line-split::after {
+    width: 14px;
+    transition: transform .5s, opacity .5s;
+}
+
+.line-split::after {
+    transform: translateX(-14px);
+}
+
+.line-split::before {
+    transform: translateX(-24px);
+}
+
+
+/* check box code */
+
+.changed.active .line-main::before {
+    transform: rotate(45deg);
+}
+
+.changed.active .line-main::after {
+    transform: rotate(-45deg);
+}
+
+.changed.active .line-split::before {
+    transform: translateX(-44px);
+    opacity: 0;
+}
+
+.changed.active .line-split::after {
+    transform: translateX(5px);
+    opacity: 0;
+}
+
+
+/* fin del checkbox */
+
+
+/* fin del icono hamburger */
+
+
+/* menu pantalla chica fin */
+
+
+/* redes sociales */
+
+.socialLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 34px;
+    cursor: url(../img/selectr.png), auto;
+    z-index: 3;
+    bottom: 30%;
+}
+
+
+/* media */
+
+.socialLink .face,
+.socialLink .instagram,
+.socialLink .twitt,
+.socialLink .gitH,
+.socialLink .WA {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    cursor: url(../img/selectr.png), auto;
+}
+
+.socialLink .face:hover .fb,
+.socialLink .instagram:hover .insta,
+.socialLink .twitt:hover .twitter,
+.socialLink .gitH:hover .git,
+.socialLink .WA:hover .whats {
+    display: none;
+}
+
+.socialLink .face .fbA,
+.socialLink .instagram .instA,
+.socialLink .twitt .twitterA,
+.socialLink .gitH .gitA,
+.socialLink .WA .whatsA {
+    display: none;
+}
+
+.socialLink .face:hover .fbA,
+.socialLink .instagram:hover .instA,
+.socialLink .twitt:hover .twitterA,
+.socialLink .gitH:hover .gitA,
+.socialLink .WA:hover .whatsA {
+    display: flex;
+    cursor: url(../img/selectr.png), auto;
+}
+
+
+/* fin redes sociales */
+
+@media screen and (max-width:800px) {
+    .hamburger {
+        display: flex;
+    }
+    .mainB {
+        display: none;
+    }
+    .main .theme {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    .main.yw .theme {
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        z-index: 5;
+    }
+    .main.yw .theme .light {
+        width: 24px;
+        height: 24px;
+        cursor: url(../img/selectr.png), auto;
+    }
+    .main.yw .theme .darkM {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    .themeB {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+}
