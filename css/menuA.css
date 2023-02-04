@@ -409,6 +409,7 @@
 .socialLink .gitH:hover .gitA,
 .socialLink .WA:hover .whatsA {
     display: flex;
+    cursor: url(../img/selectr.png),auto;
 }
 
 
