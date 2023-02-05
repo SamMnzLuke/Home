@@ -1,0 +1,440 @@
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+             ::-webkit-scrollbar,
+             ::-webkit-scrollbar-button,
+             ::-webkit-scrollbar-corner,
+             ::-webkit-scrollbar-thumb,
+             ::-webkit-scrollbar-track,
+             ::-webkit-scrollbar-track-piece {
+                width: 0;
+                height: 0;
+                color: transparent;
+                background-color: transparent;
+            }
+            /* codigo body */
+            
+            body {
+                overflow: scroll;
+                cursor: url(../img/mouse.png), auto;
+                margin: 0;
+                padding: 0;
+                background: rgb(234, 235, 240);
+                /* background-color: rgb(51, 51, 51); */
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            /* codigo del div home */
+            
+            .Home {
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                height: 95%;
+                justify-content: center;
+                align-items: center;
+                background: rgb(146, 203, 205);
+                background: linear-gradient(0deg, rgb(204, 215, 214) 0%, rgb(105, 145, 141)93%);
+                /* filter: drop-shadow(1px 1px 7px rgb(10, 84, 94)); */
+                filter: drop-shadow(0 0 10px rgba(9, 33, 65, 0.599));
+                border-radius: 20px;
+            }
+            
+            .contenedor {
+                width: 100%;
+                height: calc(100% - 50px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0 0 20px 20px;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.066);
+            }
+            /* codigo perfil */
+            
+            .profile {
+                width: 700px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-direction: row;
+            }
+            
+            .image {
+                width: 200px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .image img {
+                width: 160px;
+                height: 160px;
+                filter: drop-shadow( 4px 4px 1px rgb(105, 146, 148));
+                border-radius: 50%;
+            }
+            
+            .Description {
+                display: flex;
+                flex-direction: column;
+                width: calc(100% - 200px);
+                height: 200px;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .Description .texto {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: transparent;
+            }
+            
+            .texto h1 {
+                width: 100%;
+                height: auto;
+                background-color: transparent;
+                text-shadow: 2px 2px 0.5px rgb(84, 128, 129);
+            }
+            /* comienzo del title desapear */
+            
+            .title-Des {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                height: 40px;
+            }
+            
+            .title-Des h2 {
+                position: absolute;
+                animation: effect 30s infinite ease-in-out;
+            }
+            
+            .title-Des h2:nth-child(1) {
+                animation-delay: -30s;
+            }
+            
+            .title-Des h2:nth-child(2) {
+                animation-delay: -20s;
+            }
+            
+            .title-Des h2:nth-child(3) {
+                animation-delay: -10s;
+            }
+            
+            @keyframes effect {
+                0%,
+                20%,
+                100% {
+                    filter: blur(0px);
+                    opacity: 1;
+                }
+                40%,
+                60%,
+                80% {
+                    filter: blur(16px);
+                    opacity: 0;
+                }
+            }
+            /* fin del title desapear */
+            /* inicio code desc */
+            
+            .desc {
+                width: 400px;
+                height: 260px;
+                display: flex;
+                position: absolute;
+                justify-content: left;
+                align-items: end;
+                padding: 0 0 20px 24px;
+                border-radius: 20PX;
+                /* background-color: rgba(9, 9, 109, 0.534); */
+            }
+            /* comienzo de las medias querys para la pagina de menu */
+            
+            @media screen and (max-width:800px) {
+                .profile {
+                    width: 500px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: row;
+                }
+                .image {
+                    width: 100px;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .image img {
+                    width: 100px;
+                    height: 100px;
+                    filter: drop-shadow( 4px 4px 1px rgb(105, 146, 148));
+                    border-radius: 50%;
+                }
+                .Description {
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(100% - 110px);
+                    height: 100px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .Description .texto {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background-color: transparent;
+                    font-size: 14px;
+                }
+                .texto h1 {
+                    width: 100%;
+                    height: auto;
+                    background-color: transparent;
+                    text-shadow: 2px 2px 0.5px rgb(84, 128, 129);
+                }
+                .title-Des {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 24px;
+                }
+                .title-Des h2 {
+                    font-size: 18px;
+                }
+                .desc {
+                    width: 420px;
+                    height: 200px;
+                    display: flex;
+                    position: absolute;
+                    justify-content: left;
+                    align-items: end;
+                    padding: 0 0 20px 24px;
+                    border-radius: 20PX;
+                    /* background-color: rgba(255, 0, 0, 0.336); */
+                }
+            }
+            /* 560px */
+            
+            @media screen and (max-width:560px) {
+                .profile {
+                    width: 400px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: row;
+                }
+                .image {
+                    width: 100px;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .image img {
+                    width: 80px;
+                    height: 80px;
+                    filter: drop-shadow( 4px 4px 1px rgb(105, 146, 148));
+                    border-radius: 50%;
+                }
+                .Description {
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(100% - 100px);
+                    height: 100px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .Description .texto {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background-color: transparent;
+                    font-size: 12px;
+                }
+                .texto h1 {
+                    width: 100%;
+                    height: auto;
+                    background-color: transparent;
+                    text-shadow: 2px 2px 0.5px rgb(84, 128, 129);
+                }
+                .title-Des {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 24px;
+                }
+                .title-Des h2 {
+                    font-size: 18px;
+                }
+                .desc {
+                    width: 250px;
+                    height: 200px;
+                    display: flex;
+                    position: absolute;
+                    justify-content: left;
+                    align-items: end;
+                    padding: 0 0 20px 24px;
+                    border-radius: 20PX;
+                    /* background-color: rgba(255, 0, 0, 0.336); */
+                }
+                .desc h4 {
+                    font-size: 16px;
+                }
+            }
+            
+            @media screen and (max-width:500px) {
+                .profile {
+                    width: 300px;
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: column;
+                }
+                .image {
+                    width: 180px;
+                    height: 180px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .image img {
+                    width: 160px;
+                    height: 160px;
+                    filter: drop-shadow( 4px 4px 1px rgb(105, 146, 148));
+                    border-radius: 50%;
+                }
+                .Description {
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    height: 120px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .Description .texto {
+                    width: 100%;
+                    height: 34px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 11.4px;
+                }
+                .texto h1 {
+                    width: 100%;
+                    height: 34px;
+                    text-shadow: 2px 2px 0.5px rgb(84, 128, 129);
+                    font-size: 11.4px;
+                }
+                .title-Des {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 26px;
+                }
+                .title-Des h2 {
+                    font-size: 14px;
+                }
+                .socialLink {
+                    height: 30px;
+                    margin: 8px 0 0 0;
+                }
+            }
+            /* particles */
+            
+            canvas {
+                display: flex;
+                vertical-align: bottom;
+                border-radius: 20px;
+            }
+            /* ---- particles.js container ---- */
+            
+            #particles-js {
+                position: fixed;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                background-image: url("");
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 20px;
+            }
+            /* ---- stats.js ---- */
+            
+            .count-particles {
+                background: transparent;
+                position: absolute;
+                top: 48px;
+                left: 0;
+                width: 80px;
+                color: transparent;
+                font-size: 0.8em;
+                text-align: left;
+                text-indent: 4px;
+                line-height: 14px;
+                padding-bottom: 2px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                border-radius: 20px;
+            }
+            
+            .js-count-particles {
+                font-size: 1.1em;
+                border-radius: 20px;
+            }
+            
+            #stats,
+            .count-particles {
+                -webkit-user-select: none;
+                margin-top: 5px;
+                margin-left: 5px;
+                border-radius: 20px;
+            }
+            
+            #stats {
+                border-radius: 3px 3px 0 0;
+                overflow: hidden;
+                border-radius: 20px;
+            }
+            
+            .count-particles {
+                border-radius: 0 0 3px 3px;
+            }
